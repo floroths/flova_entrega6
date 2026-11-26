@@ -1,0 +1,637 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Xmind:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VARIABLES DE COLOR */
+:root {
+    --color-principal: #03a19a;
+    --color-secundario: #a7e4cf;
+    --color-oscuro: #006b66;
+    --color-blanco: #ffffff;
+    --color-crema: #f4eee9;
+}
+
+/* RESET UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Xmind', sans-serif;
+    background-color: var(--color-principal);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: var(--color-blanco);
+}
+
+/* NAVBAR BOOTSTRAP */
+.navbar {
+    background-color: var(--color-blanco);
+    padding: 20px;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-nav {
+    gap: 12px;
+}
+
+.navbar .nav-link {
+    color: var(--color-principal);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* HOVER */
+.navbar .nav-link:hover {
+    color: var(--color-oscuro);
+    background-color: var(--color-secundario);
+}
+
+/* FOCUS */
+.navbar .nav-link:focus-visible {
+    color: var(--color-oscuro);
+    outline: 2px solid var(--color-principal);
+    outline-offset: 3px;
+}
+
+/* ACTIVE */
+.navbar .nav-link:active {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+/* ENLACE DE PÁGINA ACTUAL */
+.navbar .nav-link.active {
+    color: var(--color-oscuro);
+    font-weight: 700;
+}
+
+/* BOTÓN HAMBURGUESA */
+.navbar-toggler {
+    border: 1px solid var(--color-principal);
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background-color: var(--color-secundario);
+}
+
+.navbar-toggler:focus-visible {
+    outline: 2px solid var(--color-oscuro);
+    outline-offset: 3px;
+    box-shadow: none;
+}
+
+.navbar-toggler:active {
+    background-color: var(--color-secundario);
+}
+
+/* TÍTULOS */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-secundario);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--color-blanco);
+    font-weight: 600;
+}
+
+/* PÁRRAFOS */
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-blanco);
+    max-width: 70ch;
+}
+
+/* ENLACES */
+a {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #d6fcf3;
+    transition: color 0.3s ease,
+                background-color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-secundario);
+    outline-offset: 3px;
+}
+
+a:active {
+    color: var(--color-blanco);
+}
+
+/* SECCIONES */
+section {
+    background-color: #f1f3f51a;
+    margin: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* IMÁGENES */
+figure {
+    max-width: 100%;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ARTÍCULOS */
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+/* INICIO */
+.inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "titulo"
+        "descripcion"
+        "imagen";
+    gap: 20px;
+}
+
+.inicio h1 {
+    grid-area: titulo;
+}
+
+.inicio p {
+    grid-area: descripcion;
+}
+
+.inicio figure {
+    grid-area: imagen;
+}
+
+/* SERVICIOS */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* CAROUSEL BOOTSTRAP */
+#carouselProyectos {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#carouselProyectos .carousel-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* CONTROLES DEL CAROUSEL */
+#carouselProyectos .carousel-control-prev,
+#carouselProyectos .carousel-control-next {
+    transition: background-color 0.3s ease,
+                opacity 0.3s ease;
+}
+
+#carouselProyectos .carousel-control-prev:hover,
+#carouselProyectos .carousel-control-next:hover {
+    background-color: rgba(0, 107, 102, 0.35);
+}
+
+#carouselProyectos .carousel-control-prev:focus-visible,
+#carouselProyectos .carousel-control-next:focus-visible,
+#carouselProyectos .carousel-indicators button:focus-visible {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 2px;
+}
+
+#carouselProyectos .carousel-control-prev:active,
+#carouselProyectos .carousel-control-next:active {
+    background-color: rgba(0, 107, 102, 0.6);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 32px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--color-principal);
+    margin: 0 auto;
+}
+
+footer a {
+    color: var(--color-oscuro);
+}
+
+/* PRESENTACIÓN DE PROYECTOS */
+.presentacion-proyectos {
+    background-color: var(--color-secundario);
+    padding: 32px;
+}
+
+.presentacion-proyectos h1 {
+    color: var(--color-principal);
+}
+
+.presentacion-proyectos p,
+.presentacion-proyectos h3,
+.presentacion-proyectos figcaption {
+    color: var(--color-oscuro);
+}
+
+/* GRILLA DE PROYECTOS */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* TARJETAS DE PROYECTOS */
+.proyectos-grid article {
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* BOTONES DE PROYECTOS */
+.proyectos-grid .btn-flova {
+    width: 100%;
+}
+
+/* NOSOTRAS */
+.nosotras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-crema);
+    gap: 20px;
+}
+
+.nosotras h1 {
+    color: var(--color-principal);
+}
+
+.nosotras p {
+    color: #a28c75;
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: #f1f3f51a;
+}
+
+/* FORMULARIO */
+.formulario-contacto {
+    background-color: var(--color-secundario);
+}
+
+.formulario-contacto h2 {
+    color: var(--color-principal);
+}
+
+.formulario-contacto > p {
+    color: var(--color-oscuro);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    color: var(--color-oscuro);
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-principal);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--color-oscuro);
+    outline-offset: 2px;
+}
+
+/* BOTONES */
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+form button {
+    padding: 12px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--color-oscuro);
+}
+
+form button:focus-visible {
+    outline: 2px solid var(--color-oscuro);
+    outline-offset: 3px;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* BOTONES PERSONALIZADOS DE FLOVA */
+.btn-flova {
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+    border: 2px solid var(--color-secundario);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.btn-flova:hover {
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    border-color: var(--color-oscuro);
+}
+
+.btn-flova:focus-visible {
+    outline: 3px solid var(--color-principal);
+    outline-offset: 3px;
+}
+
+.btn-flova:active {
+    transform: scale(0.97);
+}
+
+/* MODALES BOOTSTRAP */
+.modal-content {
+    background-color: var(--color-crema);
+    border-radius: 12px;
+}
+
+.modal-title {
+    color: var(--color-principal);
+}
+
+.modal-body p {
+    color: var(--color-oscuro);
+}
+
+.modal-body a {
+    color: var(--color-oscuro);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--color-secundario);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--color-secundario);
+}
+
+/* PRESENTACIÓN DEL EQUIPO EN INICIO */
+.presentacion-equipo {
+    background-color: var(--color-crema);
+    border-radius: 12px;
+}
+
+.presentacion-equipo h2 {
+    color: var(--color-principal);
+}
+
+.presentacion-equipo p {
+    color: var(--color-oscuro);
+}
+
+.presentacion-equipo a {
+    color: var(--color-oscuro);
+}
+
+.presentacion-equipo a:hover {
+    color: var(--color-principal);
+}
+
+/* PREGUNTAS FRECUENTES */
+.preguntas-frecuentes {
+    background-color: var(--color-crema);
+    border-radius: 12px;
+}
+
+.preguntas-frecuentes h2 {
+    color: var(--color-principal);
+}
+
+.preguntas-frecuentes > p {
+    color: var(--color-oscuro);
+}
+
+/* ACCORDION BOOTSTRAP */
+#accordionFlova {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#accordionFlova .accordion-item {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-secundario);
+    overflow: hidden;
+}
+
+#accordionFlova .accordion-button {
+    background-color: var(--color-blanco);
+    color: var(--color-oscuro);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 20px;
+    box-shadow: none;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+#accordionFlova .accordion-button:hover {
+    background-color: var(--color-secundario);
+}
+
+#accordionFlova .accordion-button:focus-visible {
+    outline: 3px solid var(--color-principal);
+    outline-offset: -3px;
+}
+
+#accordionFlova .accordion-button:active {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+#accordionFlova .accordion-button:not(.collapsed) {
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+}
+
+#accordionFlova .accordion-body {
+    background-color: var(--color-blanco);
+    color: var(--color-oscuro);
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#accordionFlova .accordion-button::after {
+    transition: transform 0.3s ease;
+}
+
+/* TARJETAS DE SERVICIOS */
+.servicios-grid article {
+    border-radius: 12px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.servicios-grid article:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-4px);
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 768px) {
+
+    section {
+        margin: 24px;
+        padding: 24px;
+    }
+
+    .inicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "descripcion imagen";
+        align-items: center;
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #carouselProyectos .carousel-item img {
+        height: 350px;
+    }
+}
+
+/* MEDIA QUERY ESCRITORIO */
+@media (min-width: 1024px) {
+
+    .navbar-nav {
+        gap: 20px;
+    }
+
+    .navbar .nav-link {
+        padding: 16px;
+    }
+
+    section {
+        margin: 32px;
+        padding: 32px;
+    }
+
+    .inicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo imagen"
+            "descripcion imagen";
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .proyectos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #accordionFlova {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: column;
+        align-items: start;
+    }
+
+    #carouselProyectos .carousel-item img {
+        height: 450px;
+    }
+}
+
+/* ACCESIBILIDAD: REDUCIR ANIMACIONES */
+@media (prefers-reduced-motion: reduce) {
+
+    #accordionFlova .accordion-button,
+    #accordionFlova .accordion-button::after,
+    .servicios-grid article {
+        transition: none;
+    }
+}

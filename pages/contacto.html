@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contactá a FLOVA Studio para solicitar un presupuesto de diseño gráfico, identidad visual, diseño web o comunicación digital.">
+
+    <title>Contacto | FLOVA Studio</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER Y NAVBAR BOOTSTRAP -->
+    <header>
+        <nav class="navbar navbar-expand-lg"
+             aria-label="Navegación principal">
+
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a href="../index.html"
+                   class="navbar-brand logo"
+                   aria-label="FLOVA Studio - Inicio">
+
+                    <img src="../images/logo.png"
+                         alt="Logo de FLOVA Studio"
+                         width="100">
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarFlova"
+                        aria-controls="navbarFlova"
+                        aria-expanded="false"
+                        aria-label="Abrir menú de navegación">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse"
+                     id="navbarFlova">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="../index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="servicios.html">
+                                Servicios
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="proyectos.html">
+                                Proyectos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="nosotras.html">
+                                Nosotras
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               aria-current="page"
+                               href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CONTACTO -->
+        <section class="contacto">
+            <h1>Hablemos de tu proyecto</h1>
+
+            <p>
+                ¿Tenés una idea, un emprendimiento
+                o una marca que querés hacer crecer?
+                En FLOVA Studio nos encantaría conocer
+                tu proyecto y ayudarte a darle vida.
+            </p>
+
+            <p>
+                Contanos qué necesitás y preparemos
+                una propuesta creativa a tu medida.
+            </p>
+
+            <p>
+                También podés escribirnos directamente a:
+                <a href="mailto:flovastudio@gmail.com">
+                    flovastudio@gmail.com
+                </a>
+            </p>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="formulario-contacto">
+            <h2>Dejanos tu mensaje</h2>
+
+            <p>
+                Completá tus datos y contanos brevemente
+                qué tipo de proyecto tenés en mente.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- NOMBRE -->
+                <p>
+                    <label for="name">Nombre:</label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Tu nombre"
+                           autocomplete="name"
+                           required>
+                </p>
+
+                <!-- CORREO -->
+                <p>
+                    <label for="email">Correo electrónico:</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="tunombre@correo.com"
+                           autocomplete="email"
+                           required>
+                </p>
+
+                <!-- MENSAJE -->
+                <p>
+                    <label for="message">Mensaje:</label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Contanos sobre tu proyecto..."
+                              required></textarea>
+                </p>
+
+                <!-- BOTÓN -->
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+            <p>
+                También podés contactarnos a través
+                de nuestras redes sociales.
+            </p>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <section class="preguntas-frecuentes">
+            <h2>Preguntas frecuentes</h2>
+
+            <p>
+                ¿Tenés dudas sobre cómo trabajamos?
+                Acá respondemos algunas de las consultas
+                más habituales antes de comenzar un proyecto.
+            </p>
+
+            <!-- ACCORDION BOOTSTRAP CON CSS GRID -->
+            <div class="accordion" id="accordionFlova">
+
+                <!-- PREGUNTA 1 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="pregunta1">
+
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#respuesta1"
+                                aria-expanded="true"
+                                aria-controls="respuesta1">
+                            ¿Cuándo puedo empezar?
+                        </button>
+                    </h3>
+
+                    <div id="respuesta1"
+                         class="accordion-collapse collapse show"
+                         aria-labelledby="pregunta1"
+                         data-bs-parent="#accordionFlova">
+
+                        <div class="accordion-body">
+                            Podemos comenzar a trabajar en cualquier
+                            momento del mes, según la disponibilidad
+                            y las características de tu proyecto.
+                            ¡Escribinos y coordinamos!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PREGUNTA 2 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="pregunta2">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#respuesta2"
+                                aria-expanded="false"
+                                aria-controls="respuesta2">
+                            ¿Cómo hago para contratar el servicio?
+                        </button>
+                    </h3>
+
+                    <div id="respuesta2"
+                         class="accordion-collapse collapse"
+                         aria-labelledby="pregunta2"
+                         data-bs-parent="#accordionFlova">
+
+                        <div class="accordion-body">
+                            Primero nos contás qué necesitás.
+                            Preparamos un presupuesto personalizado
+                            y, una vez confirmada la contratación,
+                            te solicitamos el material necesario
+                            para comenzar a trabajar.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PREGUNTA 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="pregunta3">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#respuesta3"
+                                aria-expanded="false"
+                                aria-controls="respuesta3">
+                            ¿Qué necesito para comenzar?
+                        </button>
+                    </h3>
+
+                    <div id="respuesta3"
+                         class="accordion-collapse collapse"
+                         aria-labelledby="pregunta3"
+                         data-bs-parent="#accordionFlova">
+
+                        <div class="accordion-body">
+                            Lo ideal es que nos compartas el logo
+                            de tu marca, textos, fotografías y
+                            cualquier material que tengas disponible.
+                            Si todavía no contás con estos recursos,
+                            podemos ayudarte a desarrollarlos.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PREGUNTA 4 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="pregunta4">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#respuesta4"
+                                aria-expanded="false"
+                                aria-controls="respuesta4">
+                            ¿Cuánto tiempo demora un proyecto?
+                        </button>
+                    </h3>
+
+                    <div id="respuesta4"
+                         class="accordion-collapse collapse"
+                         aria-labelledby="pregunta4"
+                         data-bs-parent="#accordionFlova">
+
+                        <div class="accordion-body">
+                            Los tiempos dependen del tipo de servicio,
+                            la cantidad de piezas y el material
+                            disponible. Antes de comenzar,
+                            acordamos un cronograma de trabajo
+                            y las instancias de revisión.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PREGUNTA 5 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="pregunta5">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#respuesta5"
+                                aria-expanded="false"
+                                aria-controls="respuesta5">
+                            ¿Puedo personalizar los servicios?
+                        </button>
+                    </h3>
+
+                    <div id="respuesta5"
+                         class="accordion-collapse collapse"
+                         aria-labelledby="pregunta5"
+                         data-bs-parent="#accordionFlova">
+
+                        <div class="accordion-body">
+                            ¡Claro! Cada marca tiene necesidades
+                            diferentes. Podemos preparar una propuesta
+                            personalizada según tus objetivos,
+                            el alcance del proyecto y tu presupuesto.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PREGUNTA 6 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="pregunta6">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#respuesta6"
+                                aria-expanded="false"
+                                aria-controls="respuesta6">
+                            ¿Cuáles son las formas de pago?
+                        </button>
+                    </h3>
+
+                    <div id="respuesta6"
+                         class="accordion-collapse collapse"
+                         aria-labelledby="pregunta6"
+                         data-bs-parent="#accordionFlova">
+
+                        <div class="accordion-body">
+                            Las condiciones y formas de pago
+                            se informan junto con el presupuesto
+                            de cada proyecto. Consultanos
+                            para conocer las opciones disponibles.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://www.instagram.com/flova.studio/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Instagram
+        </a>
+
+        <a href="https://www.facebook.com/flova.studio"
+           target="_blank"
+           rel="noopener noreferrer">
+            Facebook
+        </a>
+
+        <p>
+            &copy; 2026 FLOVA Studio.
+            Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!-- Bootstrap 5.3 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
