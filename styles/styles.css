@@ -655,3 +655,34 @@ form button:active {
         transition: none;
     }
 }
+/* ========================================
+   MEJORAS VISUALES FLOVA STUDIO
+   ======================================== */
+
+/* MENÚ DE NAVEGACIÓN EN REGULAR */
+.navbar .nav-link,
+.navbar .nav-link.active {
+    font-weight: 400;
+}
+
+/* BORDES REDONDEADOS DE LAS SECCIONES */
+section {
+    border-radius: 20px;
+}
+
+/* SECCIONES SIN FONDO */
+.inicio,
+.detalle-servicios,
+.proyectos-destacados,
+.contacto {
+    background-color: transparent;
+}
+
+/* TARJETAS DE SERVICIOS SIN FONDO */
+.servicios-grid article {
+    background-color: transparent;
+}
+
+.servicios-grid article:hover {
+    background-color: transparent;
+}
