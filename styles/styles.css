@@ -545,10 +545,22 @@ form button:active {
 /* TARJETAS DE SERVICIOS */
 .servicios-grid article {
     border-radius: 12px;
+    align-items: center;
+    text-align: center;
     transition: background-color 0.3s ease,
                 transform 0.3s ease;
 }
 
+/* ICONOS DE SERVICIOS */
+.icono-servicio {
+    display: block;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 12px;
+}
+
+/* HOVER DE SERVICIOS */
 .servicios-grid article:hover {
     background-color: rgba(255, 255, 255, 0.12);
     transform: translateY(-4px);
@@ -561,6 +573,10 @@ form button:active {
         margin: 24px;
         padding: 24px;
     }
+
+    .icono-servicio {
+    width: 140px;
+}
 
     .inicio {
         grid-template-columns: 1fr 1fr;
@@ -624,6 +640,10 @@ form button:active {
     #carouselProyectos .carousel-item img {
         height: 450px;
     }
+
+    .icono-servicio {
+    width: 160px;
+}
 }
 
 /* ACCESIBILIDAD: REDUCIR ANIMACIONES */
